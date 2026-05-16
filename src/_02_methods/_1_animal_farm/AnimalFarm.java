@@ -28,10 +28,27 @@ public class AnimalFarm {
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
+		String question =JOptionPane.showInputDialog("Which anmal du u want yo "
+				+ "Options- cow, duck, dog, cat, llama");
+		
+		if (question.equals("cow")) {
+			moo();
+		} else if (question.equals("duck")) {
+			quack();
+		} else if (question.equals ("dog")) {
+			woof();
+		} else if (question.equals ("cat")) {
+			meow();
+		} else if (question.equals ("llama")){
+			llamaScream();
+		} else if (question.equals ("lebron")){
+			Lebron();
+		}
+		
+	}
 		/* 2. Make it so that the user can keep entering new animals. */
 
-	}
+	
 
 	void moo() {
 		playNoise(mooFile);
@@ -58,6 +75,10 @@ public class AnimalFarm {
 		showImage(llamaIcon);
 	}
 	
+	void Lebron() {
+		showImage(LebronIcon);
+	}
+	
 
 
 	
@@ -74,6 +95,7 @@ public class AnimalFarm {
 	ImageIcon dogIcon;
 	ImageIcon duckIcon;
 	ImageIcon cowIcon;
+	ImageIcon LebronIcon;
 	
 	private void showImage (ImageIcon icon) {
 			JOptionPane.showMessageDialog(null, "", "You chose", 0, icon);
@@ -106,6 +128,7 @@ public class AnimalFarm {
 			dogIcon = new ImageIcon(path+"dog.jpg");
 			catIcon = new ImageIcon(path+"cat.jpg");
 			duckIcon = new ImageIcon(path+"duck.jpg");
+			LebronIcon = new ImageIcon(path+"lebron.jpg");
 
 		} catch (Exception e) {
 					
