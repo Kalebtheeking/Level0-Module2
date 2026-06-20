@@ -21,7 +21,7 @@ public class Magic8Ball {
 	//     ** You will need to make a random object!
 	//     Limit the random numbers to be between 0 and 3
 	Random answer = new Random();
-	int randomChoice = answer.nextInt (8);
+	int randomChoice = answer.nextInt (9);
 
 	if(randomChoice == 0) {
 		JOptionPane.showMessageDialog(null, "yes");
@@ -51,7 +51,7 @@ public class Magic8Ball {
     	JOptionPane.showMessageDialog(null, "nah ");
     }
 	
-	if (question == "is caleb gay") {
+	if (question.equalsIgnoreCase( "is caleb gay?")) {
 		JOptionPane.showMessageDialog(null, "no ");
 	}
 
