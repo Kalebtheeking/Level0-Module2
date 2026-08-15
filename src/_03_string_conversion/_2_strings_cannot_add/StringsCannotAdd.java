@@ -7,17 +7,17 @@ public class StringsCannotAdd {
 		// 1) Make a main method that includes all the steps below…. 
 	public static void main(String[] args) {
 			// 2) Ask the user to enter number 4 and hold it in the variable fourAsString 
-		String fourAsString =JOptionPane.showInputDialog("enter number 4");
+		String fourAsString =JOptionPane.showInputDialog("enter number 6");
 			// 3) Ask the user to enter number 6 and hold it in the variable sixAsString 
-			
+		String sixAsString =JOptionPane.showInputDialog("enter number 7");
 			// 4) Print the addition of fourAsString and sixAsString using JOptionPane 
-			
+			JOptionPane.showMessageDialog(null, Integer.parseInt(fourAsString)+Integer.parseInt(sixAsString));
 			// Did you notice 46 instead of 4 + 6 = 10?
 			
 			// 5) Ask the user to enter number 5 and hold it in the variable fiveAsString 
-			
+			String fiveAsString =JOptionPane.showInputDialog("enter number 8");
 			// 6) Print the addition of the variables fourAsString, sixAsString, and fiveAsString 
-			
+			JOptionPane.showMessageDialog(null, Integer.parseInt(fourAsString)+Integer.parseInt(sixAsString)+Integer.parseInt(fiveAsString));
 			//Did you notice 456 instead of 4 + 6 + 5 = 15?
 			
 			// Insert fourAsString inside the parenthesis of Integer.parseInt() and set the method equal to fourAsInt
